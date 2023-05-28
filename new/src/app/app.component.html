@@ -1,0 +1,16 @@
+<form [formGroup]="loginForm">
+    <div class="form-control">
+        <label for="username">username</label>
+        <input formControlName="username" id="username" placeholder="username">
+    </div>
+    <div class="form-control">
+        <label for="password">password</label>
+        <input formControlName="password" id="password" placeholder="password">
+    </div>
+    <button (click)="post()" class="primary-btn">submit</button>
+</form>
+
+<h1>{{ res }}</h1>
+
+<button (click)="get()" class="primary-btn">get profile</button>
+<h1>{{ user }}</h1>
