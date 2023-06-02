@@ -8,6 +8,7 @@ from passlib.context import CryptContext
 from fastapi.middleware.cors import CORSMiddleware
 
 
+# test key - try using user = tim pass = tim123 after $ uvicorn main:auth
 SECRET_KEY = "e0a3448975b2fd9a84a2a29a0196d638c8a4bc8b462094043e704e4a449c689f"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRES_MINUTES = 30
